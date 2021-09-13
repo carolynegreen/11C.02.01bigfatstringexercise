@@ -17,8 +17,43 @@ function generate() {
     myInput = myInput.toLowerCase();
     myString =
       myInput.charAt(0).toUpperCase() + myInput.substring(1).toLowerCase();
-    showResult();
   }
+  if (options.value === "opt2") {
+    myInput = myInput.toLowerCase();
+    myString =
+      myInput.charAt(0).toUpperCase() + myInput.substring(1).toLowerCase();
+  }
+  if (options.value === "opt3") {
+    myInput = myInput.toLowerCase();
+    myString =
+      myInput.charAt(0).toUpperCase() + myInput.substring(1).toLowerCase();
+  }
+  if (options.value === "opt4") {
+    myInput = myInput.toLowerCase();
+    myString =
+      myInput.charAt(0).toUpperCase() + myInput.substring(1).toLowerCase();
+  }
+  if (options.value === "opt5") {
+    myInput = myInput.toLowerCase();
+    myString =
+      myInput.charAt(0).toUpperCase() + myInput.substring(1).toLowerCase();
+  }
+  if (options.value === "opt6") {
+    myInput = myInput.toLowerCase();
+    myString =
+      myInput.charAt(0).toUpperCase() + myInput.substring(1).toLowerCase();
+  }
+  if (options.value === "opt7") {
+    myInput = myInput.toLowerCase();
+    myString =
+      myInput.charAt(0).toUpperCase() + myInput.substring(1).toLowerCase();
+  }
+  if (options.value === "opt8") {
+    myInput = myInput.toLowerCase();
+    myString =
+      myInput.charAt(0).toUpperCase() + myInput.substring(1).toLowerCase();
+  }
+  showResult();
 }
 
 function showResult() {
