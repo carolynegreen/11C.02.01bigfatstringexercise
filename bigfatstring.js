@@ -57,6 +57,14 @@ function generate() {
   }
   if (options.value === "opt8") {
     //With any input: Make a character uppercase, if it follows a space or a hyphen
+    const findMyspace = myInput.indexOf(" ");
+    const findHyphen = myInput.indexOf("-");
+    console.log(findMyspace);
+    console.log(findHyphen);
+    myResult =
+      myInput.substring(0, findMyspace).toLowerCase() +
+      myInput.substring(findMyspace + 1, findMyspace + 2).toUpperCase() +
+      myInput.substring(findMyspace + 2).toLowerCase();
   }
   showResult();
 }
