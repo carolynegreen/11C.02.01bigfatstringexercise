@@ -36,10 +36,27 @@ function generate() {
   }
   if (options.value === "opt5") {
     //If input is a filename: Check if a filename is .png or .jpg
-    myResult = myInput.substring(
-      myInput.indexOf(" ") + 1,
-      myInput.lastIndexOf(" ")
-    );
+    if (myInput.endsWith(".jpg")) {
+      myResult = "ends with jpg";
+    } else if (myInput.endsWith(".png")) {
+      myResult = "ends with .png";
+    }
+  }
+  if (options.value === "opt6") {
+    //If input is a password: Hide a password with the correct number of *s
+    myResult = "";
+    myResult = myResult.padEnd(myInput.length, "*");
+    console.log(myResult.length);
+  }
+  if (options.value === "opt7") {
+    //With any input: Make the third character uppercase
+    myResult =
+      myInput.substring(0, 2).toLowerCase() +
+      myInput.substring(2, 3).toUpperCase() +
+      myInput.substring(3).toLowerCase();
+  }
+  if (options.value === "opt8") {
+    //With any input: Make a character uppercase, if it follows a space or a hyphen
   }
   showResult();
 }
